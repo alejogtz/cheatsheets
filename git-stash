@@ -1,0 +1,20 @@
+# List stash stack
+git stash list
+
+# Show stash changes
+git stash show -p stash@{0}
+
+# Stash single file
+git stash push -- file1.txt file2.txt "My message"
+
+# Stash all changes
+git stash save "message"
+
+# Apply and drop last stash
+git stash pop
+
+# Apply specific change
+git stash apply stash@{0}
+
+# Drop specific change
+git stash drop stash@{0}
