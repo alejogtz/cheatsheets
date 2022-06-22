@@ -1,0 +1,2 @@
+# show which shell i am using
+echo $SHELL
