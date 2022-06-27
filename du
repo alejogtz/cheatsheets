@@ -1,0 +1,11 @@
+# To sort directories/files by size:
+du -sk *| sort -rn
+
+# To show cumulative human-readable size:
+du -sh
+
+# To sort directories/files by size(human-readable):
+du -sh * | sort -rh 
+
+# Show files sizes | Filter only MB and GB sizes
+du -hs $(ls -A) | sort -nr | grep -E '^[1-9]*\.?[1-9]+(M|G)'  # OK

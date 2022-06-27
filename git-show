@@ -1,0 +1,2 @@
+# Show N commit diff (starts from zero) of current branch
+git show $(git rev-parse --abbrev-ref HEAD)~{{commit_reverse_index}} -- {{filename}} {{filename}}

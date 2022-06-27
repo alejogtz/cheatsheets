@@ -1,0 +1,5 @@
+# List of common used commands
+du	# Size of files
+df	# Disk usage
+tree	# Tree Directory
+htop	# RAM usage

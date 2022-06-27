@@ -5,7 +5,7 @@ git stash list
 git stash show -p stash@{0}
 
 # Stash single file
-git stash push -- file1.txt file2.txt "My message"
+git stash push -m "message" -- file1.txt file2.txt 'file 3.csv'
 
 # Stash all changes
 git stash save "message"
