@@ -1,0 +1,9 @@
+# grep full options: `-r` for recursive, `-l` to print only names of files containing matches and `-i` to ignore case distinctions
+grep -rin -E '<regex>' \
+	--exclude-dir={dir1,dir2,dir3} \
+	--binary-files=without-match \
+	--exclude=<regex_pattern> <path>
+grep -rin -E '<regex>' --exclude-dir=node_modules <path>
+
+# simpe search
+grep -rin -E '<regex_pattern>' <path>

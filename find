@@ -1,0 +1,5 @@
+# find files
+find . -mindepth <mindepth> -maxdepth <maxdepth> -name '<name>' -type f -not -path '*/node_modules/*'
+
+# find simple, `iname`: case insensitive
+find . -type f -iname '<name>'
