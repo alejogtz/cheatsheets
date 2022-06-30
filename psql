@@ -1,0 +1,56 @@
+# shortcuts commands
+\l  			# listar bases de datos
+\d  			# listar tablas de la bd, incluye secuences
+\dt 			# lista de tablas de la B.D seleccionada, only relations
+\d <table_name>    	# Describe la tabla
+\d+ <table_name>  	# Informacion de columnas de la tabla
+\c <nombre_db>  	# Usar esa base de datos
+\e			# Escribir las consultas en tu editor favorito
+\h INSERT 		# ver la ayuda sobre INSERT
+\h DROP  		# ver la ayuda de drop 
+\dn 			# List All schemas
+
+# Guarda el resultado de una consulta en un archivo 
+\o /.tmp/archivo_salida.sql
+
+# para ver el archivo debe abrirse.
+cat /tmp/archivo_salida.sql
+
+# para detener el autoguardado se ejecuta
+\o
+
+# información de la conexión actual
+\conninfo
+
+# ejecutar consultas (querys) desde un archivo externo.
+\i /tmp/test.sql
+
+# Listar informacion de tablas
+SELECT *
+  FROM information_schema.columns
+ WHERE table_schema = 'your_schema'
+   AND table_name   = 'your_table'
+   ;
+
+# Backup database
+pg_dump --host localhost \
+	--port 5432 \
+	--username postgres \
+	--format plain --verbose \
+	--file "<abstract_file_path>" \
+	--table public.tablename dbname
+
+# Restore database
+pg_restore --host localhost \
+	--port 5432 \
+	--username postgres \
+	--dbname "anydb" \
+	--table public.tablename \
+	-Ft --verbose "/path/filename.backup"
+
+# Execute query commands from file into specifie database in a single transaction (`-1` option)
+psql -U username \
+	-d database \
+	-1 -f your_dump.sql
+
+

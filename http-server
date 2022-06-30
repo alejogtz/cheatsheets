@@ -1,0 +1,2 @@
+# http-serve serve local
+http-server <folder> --port=<port>
