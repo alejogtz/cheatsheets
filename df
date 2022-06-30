@@ -1,0 +1,2 @@
+# see space avalaible custom format
+df -h | grep -E '^(/dev/|Filesystem)' | sort -nr |  awk '{print $1, $3, $2, $5, $4 }' | column -t

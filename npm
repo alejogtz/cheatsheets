@@ -1,0 +1,4 @@
+# npm User installed packages
+npm list -g --depth=0
+
+

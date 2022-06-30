@@ -1,0 +1,2 @@
+# Check last packages installed
+zcat /var/log/apt/history.log.*.gz | cat - /var/log/apt/history.log | grep " install "
