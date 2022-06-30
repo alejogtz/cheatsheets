@@ -1,6 +1,9 @@
 # Kill process by name
 kill $(pidof lighttpd) && /etc/init.d/lighttpd restart
 
+# Kill process gracefully
+kill -15 `pidof lighttpd`
+
 # see disk usage
 df -h | grep -E '^(/dev/|Filesystem)' | sort -nr |  awk '{print $1, $3, $2, $5, $4 }' | column -t
 
