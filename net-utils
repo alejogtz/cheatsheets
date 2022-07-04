@@ -1,3 +1,6 @@
+# netstat alternative
+ss -a -t
+
 # Kill process by name
 kill $(pidof lighttpd) && /etc/init.d/lighttpd restart
 

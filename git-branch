@@ -1,0 +1,9 @@
+# Rename a branch 
+git branch -m <old_name> <new_name>
+
+# Log multiple branches # Referencia: https://stackoverflow.com/a/42376337/12004750
+git log --branches=<pattern>
+git log --branches="[m]aster" --branches="[t]est-model-invoice-information"
+git log --branches={"master","develop"} --oneline --graph --color
+git log --branches={"[m]aster","[t]est-model-invoice-information"} --oneline --graph --color
+

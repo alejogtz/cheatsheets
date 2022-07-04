@@ -4,6 +4,10 @@ git stash list
 # Show stash changes
 git stash show -p stash@{0}
 
+# Show diff changes of specifi. compares the stash against the commit it is based on.
+git diff stash@{0}^! -- <file>
+
+
 # Stash single file
 git stash push -m "message" -- file1.txt file2.txt 'file 3.csv'
 
