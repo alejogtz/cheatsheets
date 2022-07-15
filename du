@@ -8,5 +8,5 @@ du -sh
 du -sh * | sort -rh 
 
 # Show files sizes | Filter only MB and GB sizes
-du -hs $(ls -A) | sort -nr | grep -E '^[1-9]*\.?[1-9]+(M|G)'  # OK
-sudo du -hs $(ls -A) 2> /dev/zero | sort -nr | grep -E '^[1-9\.]*+(M|G)'  # OK
+du -hs $(ls -A) | sort -rh | grep -E '^[0-9]*\.?[0-9]+(M|G)'  # OK
+sudo du -hs $(ls -A) 2> /dev/zero | sort -rh | grep -E '^[0-9\.]+(M|G)'  # OK
