@@ -1,3 +1,6 @@
+# Show prefix './' in each line
+grepp 'requested-payments' | tr ':' ' ' | awk '{print "./"$0}'
+
 # Find pattern, ignoring binary files and match folders
 grep --binary-files=without-match --exclude-dir={node_modules,bin} -rin '<search>'
 
