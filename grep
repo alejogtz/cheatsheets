@@ -1,3 +1,6 @@
+# Grep regex syntaxs
+# https://www.gnu.org/software/findutils/manual/html_node/find_html/grep-regular-expression-syntax.html
+
 # Find pattern, ignoring binary files and match folders
 grep --binary-files=without-match --exclude-dir={node_modules,bin} -rin '<search>'
 

@@ -1,0 +1,2 @@
+# Router from Controller set
+rails routes -c CredentialsController
