@@ -1,0 +1,3 @@
+# See diff against its previuos commit
+git log -p [-m] [--follow] [-1] <path>
+

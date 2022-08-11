@@ -1,0 +1,8 @@
+# Rountine configurations
+git config --global user.name "Alejo Gutierrez"
+git config --global user.email alejox.gutierrez@gmail.com
+
+
+git config --global credential.helper store
+git config --global alias.co checkout # type `git co` instead of `checkout`
+git config --global credential.helper "cache --timeout=86400"

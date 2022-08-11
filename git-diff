@@ -1,0 +1,4 @@
+# See file changes against last commit check  also: git-log for similar
+git diff <commit> <path>
+git diff HEAD^ <file>
+git diff HEAD^^ <file>
