@@ -1,12 +1,9 @@
-<<<<<<< HEAD
-# FFind pattern with regex, strict match (\W character which is not within a word), -E: regex patch
 # Find in one file and display the filename (with /dev/null)
 # https://www.gnu.org/software/findutils/manual/html_node/find_html/grep-regular-expression-syntax.html
 grepp -E '(\W|^)payment_plan(\W|$)' app/models/account.rb /dev/null
-=======
+
 # Show prefix './' in each line
 grepp 'requested-payments' | tr ':' ' ' | awk '{print "./"$0}'
->>>>>>> 90915c04e29608506a1611fc924f479caf33ed55
 
 # Find pattern, ignoring binary files and match folders
 grep --binary-files=without-match --exclude-dir={node_modules,bin} -rin '<search>'
