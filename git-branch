@@ -13,3 +13,6 @@ git reset --hard new-tip-commit
 
 # Move branch pointer to different commit without checkout
 git branch --force <branch-name> <new-tip-commit> # OK
+
+# List branches rencently created
+git for-each-ref --sort=-committerdate refs/heads/
