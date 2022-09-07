@@ -1,3 +1,5 @@
 # See diff against its previuos commit
 git log -p [-m] [--follow] [-1] <path>
 
+# Show log from different branches. For more examples see: git-branch
+git log --branches={"[m]aster","[t]est-model-invoice-information"} --oneline --graph --color
