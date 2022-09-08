@@ -1,0 +1,2 @@
+# Generate Controller
+bin/rails generate controller CreditCards open debit credit close

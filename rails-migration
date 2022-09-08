@@ -1,0 +1,16 @@
+# Run pending migration
+
+# Migration Status
+rake db:migrate:status
+rails db:migrate:status
+
+# The db:migrate:redo command is a shortcut for doing a rollback and then migrating back up again.
+bin/rails db:migrate:redo STEP=3
+
+# This will rollback the latest migration, either by reverting the change method or by running the down method. 
+# If you need to undo several migrations you can provide a STEP parameter:
+bin/rails db:rollback STEP=3
+
+# Tracking down the version number associated with the previous migration
+bin/rails db:rollback
+
