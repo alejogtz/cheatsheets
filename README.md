@@ -66,7 +66,6 @@ git clone https://github.com/alejogtz/cheatsheets "$HOME/.config/cheat/cheatshee
 ```bash
 echo "alias cheate='cheat -p personal -e '" >> ~/.bash_aliases
 echo "alias cheatp='cheat -p personal'" >> ~/.bash_aliases
-echo "alias cheat='cheat -p community'" >> ~/.bash_aliases
 
 echo '# Load bash custom bash aliases' >> ~/.bashrc
 echo 'if [ -f "$HOME/.bash_aliases" ]; then' >> ~/.bashrc
