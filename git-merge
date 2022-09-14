@@ -3,7 +3,7 @@ git merge --squash <branch>
 
 # Combinar con otra rama --no-ff (no merge commit)
 # Automatic merge went well; stopped before committing as requested (--no-commit)
-git merge --no-ff --nocommit <branch>
+git merge --no-ff --no-commit <branch>
 
 # Rebase los commits de la otra rama y 
 # Si hay conflictos preferir los de la otra rama
