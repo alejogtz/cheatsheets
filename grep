@@ -1,3 +1,7 @@
+# Find files qhich no matches with pattern
+# -L (or --files-without-match) option
+grep -rL "foo" <folder>
+
 # Find files which match multiple search patterns at same file
 grep -ril '<search>' <path>/<dir> | xargs grep -il '<search_2>'
 
