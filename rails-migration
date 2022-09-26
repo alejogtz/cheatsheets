@@ -14,3 +14,6 @@ bin/rails db:rollback STEP=3
 # Tracking down the version number associated with the previous migration
 bin/rails db:rollback
 
+# Run a specific version
+rake db:migrate:up VERSION=20090408054532
+
