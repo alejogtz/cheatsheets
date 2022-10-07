@@ -2,3 +2,6 @@
 git diff <commit> <path>
 git diff HEAD^ <file>
 git diff HEAD^^ <file>
+
+# Show difference between two branches in specific path
+git diff <previus_branch>..<now_branch> -- <file>

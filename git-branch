@@ -16,3 +16,6 @@ git branch --force <branch-name> <new-tip-commit> # OK
 
 # List branches rencently created
 git for-each-ref --sort=-committerdate refs/heads/
+
+# Switch to previous branch
+git switch -
