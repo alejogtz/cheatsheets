@@ -1,3 +1,11 @@
+# Abort merge, rebase, cherry-pick
+# rebase: git rebase --abort
+# cherry-pick: git cherry-pick --abort, --continue
+# Equivalentes
+git merge --abort
+git reset --merge
+
+
 # Combinar rama squash mode
 git merge --squash <branch>
 

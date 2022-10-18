@@ -1,3 +1,6 @@
+# Delete remote branch
+ git push origin --delete <remote/branch>
+
 # Rename a branch 
 git branch -m <old_name> <new_name>
 
