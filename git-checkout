@@ -1,2 +1,5 @@
 # Checkout into new branch in specifie commit
 git checkout -b <branch-name> <sha1-of-commit>
+
+# Switch to previous branch
+git switch -

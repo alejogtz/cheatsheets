@@ -1,6 +1,9 @@
-# Find in one file and display the filename (with /dev/null)
-# https://www.gnu.org/software/findutils/manual/html_node/find_html/grep-regular-expression-syntax.html
-grepp -E '(\W|^)payment_plan(\W|$)' app/models/account.rb /dev/null
+# Find files qhich no matches with pattern
+# -L (or --files-without-match) option
+grep -rL "foo" <folder>
+
+# Find files which match multiple search patterns at same file
+grep -ril '<search>' <path>/<dir> | xargs grep -il '<search_2>'
 
 # Show prefix './' in each line
 grepp 'requested-payments' | tr ':' ' ' | awk '{print "./"$0}'
@@ -19,3 +22,7 @@ grep -rin -E '<regex_pattern>' <path>
 
 # Filenames only of the search matching
 grep -ri --binary-files=without-match --exclude-dir={node_modules,bin,tpm,log} -l 
+
+# Find in one file and display the filename (with /dev/null)
+# https://www.gnu.org/software/findutils/manual/html_node/find_html/grep-regular-expression-syntax.html
+grepp -E '(\W|^)payment_plan(\W|$)' app/models/account.rb /dev/null
