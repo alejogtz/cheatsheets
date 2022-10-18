@@ -6,8 +6,7 @@ grepp -E '(\W|^)payment_plan(\W|$)' app/models/account.rb /dev/null
 grepp 'requested-payments' | tr ':' ' ' | awk '{print "./"$0}'
 
 # Find pattern, ignoring binary files and match folders
-grep --binary-files=without-match --exclude-dir={node_modules,bin} -rin '<search>'
-
+grep --binary-files=without-match --exclude-dir={node_modules,bin,tmp,log,coverage,db,.git} -rin '<search>'
 # grep full options: `-r` for recursive, `-l` to print only names of files containing matches and `-i` to ignore case distinctions
 grep -rin -E '<regex>' \
 	--exclude-dir={dir1,dir2,dir3} \
