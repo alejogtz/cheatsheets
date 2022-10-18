@@ -3,3 +3,7 @@ find . -mindepth <mindepth> -maxdepth <maxdepth> -name '<name>' -type f -not -pa
 
 # find simple, `iname`: case insensitive
 find . -type f -iname '<name>'
+
+# Find and execute
+find ./ -type f \
+   -exec sed -i 's/old_string/new_string/g' {} \;
