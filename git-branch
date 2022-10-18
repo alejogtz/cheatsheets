@@ -7,6 +7,9 @@ git log --branches="[m]aster" --branches="[t]est-model-invoice-information"
 git log --branches={"master","develop"} --oneline --graph --color
 git log --branches={"[m]aster","[t]est-model-invoice-information"} --oneline --graph --color
 
+# log branches sith prefix-pattern
+git log --branches="insurance-renewal/*" --oneline --graph --color
+
 # Move branch pointer to different commit
 git checkout branch-name
 git reset --hard new-tip-commit
