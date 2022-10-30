@@ -1,2 +1,5 @@
 # Show N commit diff (starts from zero) of current branch
 git show $(git rev-parse --abbrev-ref HEAD)~{{commit_reverse_index}} -- {{filename}} {{filename}}
+
+# Show git commit changes and specific file
+git show {{sha_commit}} -- file1 file

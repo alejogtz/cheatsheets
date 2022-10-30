@@ -1,0 +1,4 @@
+# download and unzip
+curl -fsSL --insecure <url> -o temp.zip \
+&& unzip temp.zip -d <directory> \
+&& rm temp.zip
