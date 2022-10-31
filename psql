@@ -58,6 +58,10 @@ pg_restore --host localhost \
 	--table public.tablename \
 	-Ft --verbose "/path/filename.backup"
 
+# Run Command Single Line
+psql -h localhost -U postgres -c "CREATE DATABASE microservicios"
+psql -h localhost -U postgres -c "<query>"
+
 # Execute query commands from file into specifie database in a single transaction (`-1` option)
 psql -U username \
 	-d database \

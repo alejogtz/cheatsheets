@@ -11,6 +11,9 @@ git diff stash@{0}^! -- <file>
 # Stash single file
 git stash push -m "message" -- file1.txt file2.txt 'file 3.csv'
 
+# Stash folder path
+git stash push -m "message" -- /path/to/folder
+
 # Stash all changes
 git stash save "message"
 

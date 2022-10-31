@@ -1,3 +1,7 @@
+# Find Directories
+find ./ -type d -iname '*<patterns>'
+find ./ -type d -iname '<pattern>' 2> /dev/null # No print errors
+
 # find files
 find . -mindepth <mindepth> -maxdepth <maxdepth> -name '<name>' -type f -not -path '*/node_modules/*'
 
