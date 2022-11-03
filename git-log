@@ -7,9 +7,19 @@ git log --branches="insurance-renewal/*" --oneline --graph --color --all
 # Show log from different branches. For more examples see: git-branch
 git log --branches={"[m]aster","[t]est-model-invoice-information"} --oneline --graph --color
 
-# Log ignoring merge commits
-git log --no-merges --first-parent
+# Log current branch but only their commits
+git log  --oneline --first-parent
+
+# Log current branc, also ignoring merge commits
+git log --oneline --no-merges --first-parent
 
 # Commits of author without merge commits
 git log --author='Alejo Gutierrez' --no-merges
 
+
+# Related
+#
+#
+
+# Show files changes in specified commit
+git show <sha-commit> -- <file>
