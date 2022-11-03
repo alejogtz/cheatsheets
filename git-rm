@@ -1,0 +1,3 @@
+# Delete git file from index but not from directory
+git rm --cached <file>
+
