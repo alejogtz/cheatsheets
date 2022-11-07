@@ -1,0 +1,5 @@
+# Pull branch into HEAD
+git pull <remote_name> <local>
+
+# Download changes from default remote repositoru and use fast-forward
+git pull --rebase

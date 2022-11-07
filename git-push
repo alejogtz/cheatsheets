@@ -1,0 +1,8 @@
+# Delete remote branch
+git push origin --delete <branch>
+
+# Push local branch to remote branch
+git push origin <local_branch>:<remote_branch>
+
+# Pushes local  branch to equal named remote branch
+git push origin <local_branch
