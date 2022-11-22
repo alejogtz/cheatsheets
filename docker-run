@@ -1,0 +1,22 @@
+# Full options
+docker run 
+   --name       <name> \
+   --rm \
+   -it \
+   -v          $HOME/my-app/data:/app \
+   -p          8080:80 \
+   --network   <custom_network> \
+   -e          PASSWORD='<hardpassword>' \
+   --workdir   /app \
+   apache:2.6 bash
+
+# Full options extendend
+docker run --rm \
+  --name        <name> \
+  --interactive --tty \
+  --volume      $HOME/my-app/data:/app \
+  --port        8080:80 \
+  --network     <custom_network> \
+  --env         PASSWORD='<hardpassword>' \
+  --workdir     /app \
+  apache:2.6 bash

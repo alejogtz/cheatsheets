@@ -14,4 +14,8 @@ rake db:migrate:down VERSION=20221024160310
 rake db:migrate:rollback STEP=3
 rake db:migrate:redo STEP=3
 
+# Status with data
+rake db:migrate:status:with_data
 
+# Migrate with data
+rake db:migrate:with_data

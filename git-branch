@@ -1,7 +1,10 @@
+# Find out a git banch creator
+git for-each-ref --format='%(committerdate) %09 %(authorname) %09 %(refname)' --sort=committerdate | grep '<branch_name>'
+
 # Delete remote branch
  git push origin --delete <remote/branch>
 
-# Rename a branch 
+# Rename a branch
 git branch -m <old_name> <new_name>
 
 # Log multiple branches # Referencia: https://stackoverflow.com/a/42376337/12004750
