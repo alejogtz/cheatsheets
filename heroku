@@ -1,0 +1,19 @@
+# Run data migration command in production Enviroment
+heroku run --remote production rails db:migrate:status:with_data
+
+# List backups from specified application
+heroku pg:backups --app api-nexu
+
+# Detail backup info from specified backup name
+heroku pg:backups:info <number> --app api-nexu
+
+# Download latest backup from specified latest info
+heroku pg:backups:download --app api-nexu
+
+# Download numered backup info
+heroku pg:backups:download <backup_id> --app api-nexu
+
+# Create a database backup from specified application
+heroku pg:backups:capture --app api-nexu
+
+
