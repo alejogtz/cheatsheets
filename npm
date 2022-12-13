@@ -1,4 +1,5 @@
 # npm User installed packages
 npm list -g --depth=0
 
-
+# format code with prettier
+npx prettier --write $(git status --porcelain | grep -E "^\s*(M|\?)"  | cut -c4- | xargs)

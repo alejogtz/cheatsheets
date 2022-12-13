@@ -28,3 +28,5 @@ git for-each-ref --sort=-committerdate refs/heads/
 
 # Switch to previous branch
 git switch -
+
+# Go to previous branch
