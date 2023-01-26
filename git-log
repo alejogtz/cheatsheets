@@ -1,11 +1,9 @@
-# See diff against its previuos commit
-git log -p [-m] [--follow] [-1] <path>
+# Commits of author without merge commits
+git log --author='Alejo Gutierrez' --no-merges
 
-# Log sub/branches below insurance-renewal
-git log --branches="insurance-renewal/*" --oneline --graph --color --all
-
-# Show log from different branches. For more examples see: git-branch
-git log --branches={"[m]aster","[t]est-model-invoice-information"} --oneline --graph --color
+# Pretty git log 
+# Format: <sha-> <time ago> <author> <branch> <commit message>:
+git log --pretty='%C(yellow)%h %C(cyan)%cd %Cblue%aN%C(auto)%d %Creset%s' --graph --date=relative --date-order
 
 # Log current branch but only their commits
 git log  --oneline --first-parent
@@ -13,9 +11,14 @@ git log  --oneline --first-parent
 # Log current branc, also ignoring merge commits
 git log --oneline --no-merges --first-parent
 
-# Commits of author without merge commits
-git log --author='Alejo Gutierrez' --no-merges
+# See diff against its previuos commit
+git log -p [-m] [--follow] [-1] <path>
 
+# show commits under branch <name>
+git log --branches="insurance-renewal/*" --oneline --graph --color --all
+
+# show multiple branches log. For more examples see: git-branch
+git log --branches={"[m]aster","[t]est-model-invoice-information"} --oneline --graph --color
 
 # Related
 #
