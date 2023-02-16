@@ -1,2 +1,7 @@
 # Generate Controller
 bin/rails generate controller CreditCards open debit credit close
+
+# Generate Mailer with action
+rails generate mailer InsuranceRenewalMailer confirm_insurance
+
+rails generate helper {{InsuranceRenewalProcessHelper}}

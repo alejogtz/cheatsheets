@@ -1,3 +1,13 @@
+# Run Command Single Line
+psql -h localhost -U postgres -c "CREATE DATABASE microservicios"
+psql -h localhost -U postgres -c "<query>"
+
+# showing one column per line with column
+# man psql => \x
+# man psql => --expanded
+# man psql => \pset => expanded
+psql --expanded -h localhost -U postgres -c "<query>"
+
 # Simple connection to database
 psql --host localhost \
      --port 5432 \
@@ -57,10 +67,6 @@ pg_restore --host localhost \
 	--dbname "anydb" \
 	--table public.tablename \
 	-Ft --verbose "/path/filename.backup"
-
-# Run Command Single Line
-psql -h localhost -U postgres -c "CREATE DATABASE microservicios"
-psql -h localhost -U postgres -c "<query>"
 
 # Execute query commands from file into specifie database in a single transaction (`-1` option)
 psql -U username \

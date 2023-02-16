@@ -1,3 +1,7 @@
+# show filenames changed from current branch comparison branch partida
+git diff --name-only $(git rev-parse --abbrev-ref $(git rev-parse --abbrev-ref HEAD)@{u})..$(git rev-parse --abbrev-ref HEAD)
+
+#
 # See file changes against last commit check  also: git-log for similar
 git diff <commit> <path>
 git diff HEAD^ <file>

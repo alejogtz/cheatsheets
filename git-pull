@@ -3,3 +3,6 @@ git pull <remote_name> <local>
 
 # Download changes from default remote repositoru and use fast-forward
 git pull --rebase
+
+# git pull on a different branch
+git fetch origin master:master
