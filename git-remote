@@ -1,2 +1,4 @@
 # Set upstream branch with remote
 git branch --set-upstream-to=origin/<branch> <local>/<branch>
+
+# set new origin remote
