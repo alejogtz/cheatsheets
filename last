@@ -1,2 +1,5 @@
 # See last five reboot sytems
 TZ='America/Mexico_City' last -x | grep reboot | head -5'
+
+# List last reboots
+TZ='America/Mexico_City' last reboot 
