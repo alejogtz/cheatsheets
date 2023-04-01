@@ -1,0 +1,2 @@
+# git pull on a different branch
+git fetch origin master:master

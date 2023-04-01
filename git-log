@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 # Commits of author without merge commits
 git log --author='Alejo Gutierrez' --no-merges
+
+# See commit history of specified branch
+git log --oneline {{branch}}
 
 # Pretty git log 
 # Format: <sha-> <time ago> <author> <branch> <commit message>:

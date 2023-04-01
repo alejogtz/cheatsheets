@@ -1,3 +1,20 @@
+# Run a query thar returns a json and store it into file
+psql -c "SELECT metadata from workflows where metadata->>'address_for_contract_signature' is not null limit 1" -d prestemos_development --tuples-only -o metadata.json # -t also works
+
+# Run a query using jsonb#>
+PGPASSWORD={{password}} psql -h localhost -U ubuntu -d prestemos_development -c \
+	"SELECT * FROM CONTRACTS WHERE contracts.params::jsonb#>'{contract,vehicle} IS NOT NULL LIMIT 5"
+
+# Run Command Single Line
+psql -h localhost -U postgres -c "CREATE DATABASE microservicios"
+psql -h localhost -U postgres -c "<query>"
+
+# showing one column per line with column
+# man psql => \x
+# man psql => --expanded
+# man psql => \pset => expanded
+psql --expanded -h localhost -U postgres -c "<query>"
+
 # Simple connection to database
 psql --host localhost \
      --port 5432 \
@@ -57,10 +74,6 @@ pg_restore --host localhost \
 	--dbname "anydb" \
 	--table public.tablename \
 	-Ft --verbose "/path/filename.backup"
-
-# Run Command Single Line
-psql -h localhost -U postgres -c "CREATE DATABASE microservicios"
-psql -h localhost -U postgres -c "<query>"
 
 # Execute query commands from file into specifie database in a single transaction (`-1` option)
 psql -U username \
