@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Commits of author without merge commits
 git log --author='Alejo Gutierrez' --no-merges
 
