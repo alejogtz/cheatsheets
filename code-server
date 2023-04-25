@@ -1,0 +1,6 @@
+# Run code server on another port
+code-server --port 8085 
+
+# Edit code-server port
+v /home/ubuntu/.config/code-server/config.yaml
+
