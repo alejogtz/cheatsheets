@@ -1,3 +1,9 @@
+# Generate schema migration
+rails generate migration add_file_size_to_digital_signature
+
+# Generate Controller in module Api::V1::Vigilante
+rails generate controller Api::V1::Vigilante --no-template-engine
+
 # Generate helper in specific module
 rails generate helper Api::V1::ConverterHelper
 
