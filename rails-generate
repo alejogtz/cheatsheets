@@ -1,3 +1,6 @@
+# Generate rails job
+rails generate job validate_gps_installation
+
 # Generate schema migration
 rails generate migration add_file_size_to_digital_signature
 
