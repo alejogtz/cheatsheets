@@ -1,3 +1,7 @@
+# Replace 2nc ocurrence of `:` by empty, useful for grep 
+grep -rin '{{regex}}'' | sed 's/:/ /2'
+
+
 # Find files qhich no matches with pattern
 # -L (or --files-without-match) option
 grep -rL "foo" <folder>

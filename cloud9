@@ -1,0 +1,3 @@
+# Install cloud9 terminal based editor
+npm install -g c9
+
