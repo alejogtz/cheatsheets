@@ -1,0 +1,3 @@
+# curl request via proxy
+curl -x <proxy-server-address>:<port> <URL>
+
