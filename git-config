@@ -1,3 +1,7 @@
+# Set custom colors on untrcked and modified files
+git config --global color.status.untracked {{yellow}}
+git config --global color.status.changed {{color_code}}
+
 # Rountine configurations
 git config --global user.name "Alejo Gutierrez"
 git config --global user.email alejox.gutierrez@gmail.com

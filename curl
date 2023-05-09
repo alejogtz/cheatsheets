@@ -1,0 +1,7 @@
+# Basic curl request
+curl -fsSL {{url.ext.tz}} -o {{out.ext.tz}}
+# curl -sSL ifconfig.me
+
+# curl request via proxy
+curl -x <proxy-server-address>:<port> <URL>
+

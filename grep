@@ -1,6 +1,6 @@
+# Replace 2nc ocurrence of `:` by empty, useful for grep 
+grep -rin '{{regex}}'' | sed 's/:/ /2'
 
-# Replace second ocurrence of `:` by empty whitespace to better terminar file redirection
-grep ConsultaBuroComponent | sed 's/:/ /2'
 
 # Find files qhich no matches with pattern
 # -L (or --files-without-match) option

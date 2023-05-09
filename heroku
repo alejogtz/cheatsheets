@@ -1,3 +1,6 @@
+# Login terminal mode
+heroku login -i
+
 # Run data migration command in production Enviroment
 heroku run --remote production rails db:migrate:status:with_data
 
