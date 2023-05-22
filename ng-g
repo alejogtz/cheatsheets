@@ -1,0 +1,10 @@
+# Cheatsheets for ng generate
+
+# Generate Pipe
+cd projects/nexu-library/utilities/
+ng g pipe src/lib/pipe/ShortNumber
+
+# Generate a new component based on current directory
+cd projects/team/src/app
+ng g c payments/domiciliationReport
+

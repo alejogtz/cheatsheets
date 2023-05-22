@@ -22,3 +22,25 @@ cat /home/ubuntu/.config/code-server/config.yaml
 
 # 6. Run code-server and code it
 code-server --port 8085
+
+# ----------------- < SSL Configuration  > ---------------
+# Create config folder if necessary
+mkdir -p ~/.config/code-server
+
+# Generate a self-signed certificate
+openssl req -newkey rsa:2048 -nodes -keyout $HOME/.config/code-server/key.pem \
+	-x509 -days 365 \
+	-subj "/C=MX/ST=Oaxaca/L=Oaxaca/O=Auditore IT/OU=Inc/CN=auditore.domain.com" \
+	-out $HOME/.config/code-server/cert.pem
+
+# Remove existing cert and cert-key
+sed -i '/^cert:/d' ~/.config/code-server/config.yaml
+sed -i '/^cert-key:/d' ~/.config/code-server/config.yaml
+
+# Add cert and cert-key
+echo "cert: $HOME/.config/code-server/cert.pem" >> ~/.config/code-server/config.yaml
+echo "cert-key: $HOME/.config/code-server/key.pem" >> ~/.config/code-server/config.yaml
+
+# Re-run code-server
+code-server --port 8085
+
