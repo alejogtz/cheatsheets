@@ -1,7 +1,9 @@
+curl -x 189.129.245.62:80 ifconfig.me
 # Basic curl request
 curl -fsSL {{url.ext.tz}} -o {{out.ext.tz}}
 # curl -sSL ifconfig.me
 
 # curl request via proxy
 curl -x <proxy-server-address>:<port> <URL>
+# e.g. curl -x 189.250.152.197:80 ifconfig.me # should return same ip as proxy server
 

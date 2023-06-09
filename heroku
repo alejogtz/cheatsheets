@@ -1,3 +1,4 @@
+
 # Login terminal mode
 heroku login -i
 
@@ -12,6 +13,7 @@ heroku pg:backups:info <number> --app api-nexu
 
 # Download latest backup from specified latest info
 heroku pg:backups:download --app api-nexu
+heroku pg:backups:download --app api-nexu --output=../latest.com
 
 # Download numered backup info
 heroku pg:backups:download <backup_id> --app api-nexu
