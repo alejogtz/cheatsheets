@@ -1,3 +1,4 @@
+curl -x 189.250.183.119:80 ifconfig.me
 curl -x 189.129.245.62:80 ifconfig.me
 # Basic curl request
 curl -fsSL {{url.ext.tz}} -o {{out.ext.tz}}

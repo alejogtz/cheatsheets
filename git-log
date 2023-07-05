@@ -1,5 +1,9 @@
+# Show all authors of repository
+git log --format='%an' | sort -u
+
 # Commits of author without merge commits
 git log --author='Alejo Gutierrez' --no-merges
+git log --author='Alejo Gutierrez'  --oneline --pretty=format:"%h %s (%ad)" --date=format:'%b %d, %Y' --no-merges
 
 # See commit history of specified branch
 git log --oneline {{branch}}
