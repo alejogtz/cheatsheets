@@ -1,3 +1,10 @@
+# Se Combinar con otra rama pero sin hacer el commit y sin | MERGING
+git merge --no-commit --squash alejo/pdv/proof_of_address
+
+# Se combina con otra rama pero sin hacer commit pero con | MERGING 
+git merge --no-commit --no-ff alejo/pdv/proof_of_address
+
+
 # Continue merge when `<branh_name> | MERGING` status is on
 git merge --continue
 

@@ -1,0 +1,2 @@
+# Show rails spec files
+git status --porcelain -uall | grep '_spec.rb' |  awk '{print $2}'

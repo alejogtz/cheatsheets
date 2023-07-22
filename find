@@ -11,3 +11,7 @@ find . -type f -iname '<name>'
 # Find and execute
 find ./ -type f \
    -exec sed -i 's/old_string/new_string/g' {} \;
+find ./ -type f -iname '*name*' -exec rm {} \;
+
+# Find files and delete it, with `xargs` command
+find . -type f -iname '*proof_of_address_verification*' | xargs rm

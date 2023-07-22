@@ -1,3 +1,7 @@
+rails g serializer Api::V1::WorkflowSerializer::AddressProofsurvey
+# Generate a serializer
+rails g serializer Api::V1::AddressVerificationSurveySerializer::BasicData
+
 # Generate a new Model
 rails generate model ConsultaVigilante
 
