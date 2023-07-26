@@ -15,10 +15,7 @@ grepp 'requested-payments' | tr ':' ' ' | awk '{print "./"$0}'
 # Find pattern, ignoring binary files and match folders
 grep --binary-files=without-match --exclude-dir={node_modules,bin,tmp,log,coverage,db,.git} -rin '<search>'
 # grep full options: `-r` for recursive, `-l` to print only names of files containing matches and `-i` to ignore case distinctions
-grep -rin -E '<regex>' \
-	--exclude-dir={dir1,dir2,dir3} \
-	--binary-files=without-match \
-	--exclude=<regex_pattern> <path>
+grep -rin -E '<regex>' --exclude-dir={dir1,dir2,dir3} --binary-files=without-match --exclude=<regex_pattern> <path>
 grep -rin -E '<regex>' --exclude-dir=node_modules <path>
 
 # simpe search
