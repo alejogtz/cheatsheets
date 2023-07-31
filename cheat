@@ -1,2 +1,5 @@
 # List avalaible personal cheats
 cheat -l -t personal
+
+# Find word in grep cheatsheets
+cheat -t personal -s 'grep' # find grep in all available cheatsheets
