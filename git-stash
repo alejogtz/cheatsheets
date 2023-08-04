@@ -1,3 +1,7 @@
+# Stash modified files and untracked files but keep index
+git stash --keep-index -u
+git stash -k -u # short version
+
 # List stash stack
 git stash list
 
