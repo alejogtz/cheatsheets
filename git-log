@@ -1,3 +1,7 @@
+# show branches of alejo/onboarding and master
+git log --branches={"alejo/onboarding","[m]aster"} --oneline --graph --first-parent
+git log --branches="alejo/onboarding" --oneline --graph --first-parent
+
 # Show all authors of repository
 git log --format='%an' | sort -u
 

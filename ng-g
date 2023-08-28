@@ -1,5 +1,9 @@
 # Cheatsheets for ng generate
 
+# Generate a new module and new component
+ ng g m pdv-onboarding --flat --module=app
+
+
 # Generate Pipe
 cd projects/nexu-library/utilities/
 ng g pipe src/lib/pipe/ShortNumber
