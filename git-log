@@ -37,3 +37,7 @@ git log --branches={"[m]aster","[t]est-model-invoice-information"} --oneline --g
 
 # Show files changes in specified commit
 git show <sha-commit> -- <file>
+
+
+# Magia muy negra para listar commits perdidos en stash
+ git log --graph --oneline --decorate  --all $( git fsck --no-reflog | awk '/dangling commit/ {print $3}' )
