@@ -3,3 +3,6 @@
 
 # Open a Key file of SAT
 openssl pkcs8 -inform DER -in {{filename}}.key --passin 'pass:{{PASSWORD}}'
+
+# Open a Cert File of SAT
+
