@@ -1,3 +1,4 @@
+openssl x509 -in {{filename}}.cer -text -noout
 # Open a Req File of SAT
  openssl req -inform DER -in {{filename}}.req -text -noout
 
@@ -5,4 +6,5 @@
 openssl pkcs8 -inform DER -in {{filename}}.key --passin 'pass:{{PASSWORD}}'
 
 # Open a Cert File of SAT
+openssl x509 -in {{filename}}.cer -text -noout
 
