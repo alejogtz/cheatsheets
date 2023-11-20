@@ -9,6 +9,10 @@ PGPASSWORD={{password}} psql -h localhost -U ubuntu -d prestemos_development -c 
 psql -h localhost -U postgres -c "CREATE DATABASE microservicios"
 psql -h localhost -U postgres -c "<query>"
 
+# Run query from file
+psql --expanded -d {{database}} -h {{127.0.0.1}} -U {{postgres}} -p {{port}} -f query.sql
+psql --expanded -d prestemos_development -f query.sql
+
 # showing one column per line with column
 # man psql => \x
 # man psql => --expanded
@@ -80,4 +84,13 @@ psql -U username \
 	-d database \
 	-1 -f your_dump.sql
 
+# TOP 10 most sizes tables
+psql -d prestemos_development -c "SELECT table_name,
+       pg_size_pretty(total_size)
+FROM (
+    SELECT table_name,
+           pg_total_relation_size(table_name) AS total_size
+    FROM information_schema.tables
+    WHERE table_schema = 'public'  AS table_sizes)
+ORDER BY total_size DESC;"
 
