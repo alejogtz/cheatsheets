@@ -1,0 +1,15 @@
+# Install certbot
+sudo apt install certbot python3-certbot-apache -y
+sudo apt install certbot -y
+sudo add-apt-repository universe
+sudo add-apt-repository multiverse
+sudo apt update
+sudo apt install libapache2-mod-ssl
+sudo certbot certonly --standalone -d alejo-backend.ddns.net
+sudo bash -c "cd /etc/letsencrypt/live && ls"
+sudo bash -c "cd /etc/letsencrypt/live/alejo-backend.ddns.net && ls"
+sudo bash -c "cp /etc/letsencrypt/live/alejo-backend.ddns.net/fullchain.pem ~/environment/prestemos_backend/config"
+sudo bash -c "cp /etc/letsencrypt/live/alejo-backend.ddns.net/privkey.pem ~/environment/prestemos_backend/config"
+
+# run dev server RoR
+sudo -E env "RAILS_ENV=development" "PATH=$PATH" bundle exec rails s -b 'ssl://0.0.0.0:443?key=config/privkey.pem&cert=config/fullchain.pem' -e development
