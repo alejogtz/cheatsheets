@@ -1,0 +1,9 @@
+# This cheatsheet save commands to run and deploy tweet bot
+python3 -m venv .venv
+
+. .venv/bin/activate
+
+ pip install Flask
+
+
+
