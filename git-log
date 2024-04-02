@@ -1,3 +1,6 @@
+# Show changes made by author in given path
+git log --author="{{author}}" -p -- {{path}}
+
 # show branches of alejo/onboarding and master
 git log --branches={"alejo/onboarding","[m]aster"} --oneline --graph --first-parent
 git log --branches="alejo/onboarding" --oneline --graph --first-parent
