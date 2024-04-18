@@ -1,3 +1,7 @@
+# Show changes in file from line to line
+git log -L {{start}},{{end}}:{{path_file}}
+git log -L 208,220:app/mailers/gps_mailer.rb
+
 # Show changes made by author in given path
 git log --author="{{author}}" -p -- {{path}}
 
