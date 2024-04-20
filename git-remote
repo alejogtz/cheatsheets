@@ -2,3 +2,9 @@
 git branch --set-upstream-to=origin/<branch> <local>/<branch>
 
 # set new origin remote
+git remote set-url {{remote}} {{url}}
+git remote set-url heroku https://git.heroku.com/railstuto-sample-app.git
+git remote set-url origin git@github.com:alejogtz/configs.git
+
+# List remotes
+git remote -v
