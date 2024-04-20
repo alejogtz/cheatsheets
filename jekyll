@@ -1,3 +1,4 @@
 # Run jekyll server
 JEKYLL_ENV=production bundle exec jekyll serve --host=0.0.0.0 --port=8080 --increment
 # JEKYLL_ENV=production to propertly set {{url}} and  {{baseurl}} in generated files
+# https://github.com/jekyll/jekyll/issues/6360#issuecomment-328970332
