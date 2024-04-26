@@ -1,3 +1,6 @@
+# Open global config in configured editor
+git config --global --edit
+
 # Set custom colors on untrcked and modified files
 git config --global color.status.untracked {{yellow}}
 git config --global color.status.changed {{color_code}}
