@@ -1,3 +1,9 @@
+# Find commit hash which contains file throught all branches by regexp
+git log --all -- '**/my_file.png'
+
+# Find branches which contains desired commit
+git branch --contains {{commit}}
+
 # Bind local branch to remote branch
 git branch --set-upstream-to=origin/<branch> alejo/domi-historic/base
 

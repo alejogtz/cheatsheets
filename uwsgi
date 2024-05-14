@@ -1,3 +1,2 @@
 # Run uwsgi server from file and with pidfile
 sudo uwsgi --ini uwsgi.ini --stats 0.0.0.0:1717  --pidfile uwsgi.pid
-

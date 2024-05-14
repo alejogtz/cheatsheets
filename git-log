@@ -1,3 +1,9 @@
+# Find commit hash which contains file throught all branches by regexp
+git log --all -- '**/my_file.png'
+
+# Find branches which contains desired commit
+git branch --contains {{commit}}
+
 # Show changes in file from line to line
 git log -L {{start}},{{end}}:{{path_file}}
 git log -L 208,220:app/mailers/gps_mailer.rb
