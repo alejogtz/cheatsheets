@@ -1,0 +1,2 @@
+# Ruby version
+ruby -v
