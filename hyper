@@ -1,0 +1,8 @@
+# Install config plugin
+hyper i config
+
+# Install safe paste plugin
+hyper i hyperterm-safepaste
+
+# uninstall plugin
+hyper uninstall hyper-rename-tab
