@@ -1,3 +1,7 @@
+# See stashes in current branch
+git stash list | grep {{branch}}
+git stash list | grep cotejo-domicilios-version
+
 # Stash modified files and untracked files but keep index
 git stash --keep-index -u
 git stash -k -u # short version
