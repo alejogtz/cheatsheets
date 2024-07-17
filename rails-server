@@ -1,2 +1,5 @@
+# Server up with production environment and enable log to stdout
+RAILS_LOG_TO_STDOUT=true rails server -p 8080 -b 0.0.0.0 -e production
+
 # Server up in public IP and over port 8080
 rails server -p 8080 -b 0.0.0.0

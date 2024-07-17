@@ -1,0 +1,3 @@
+# run rspec test with output format as documentation
+rspec {{file}} --format=documentation
+
