@@ -1,3 +1,4 @@
 # Edit espanso base.yml with code or any other editor
+# This open waiting new tab
 EDITOR='code --wait' espanso edit
 
