@@ -1,0 +1,3 @@
+# Edit espanso base.yml with code or any other editor
+EDITOR='code --wait' espanso edit
+
