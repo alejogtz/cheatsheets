@@ -1,0 +1,3 @@
+# apply patch
+# https://stackoverflow.com/a/2250170
+git apply file.patch --3way
