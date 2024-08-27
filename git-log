@@ -1,3 +1,6 @@
+# List git authors
+git log --format='%aN' | sort -u
+
 # Find commit hash which contains file throught all branches by regexp
 git log --all -- '**/my_file.png'
 

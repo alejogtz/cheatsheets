@@ -1,3 +1,6 @@
+# Add configuration to global stash config  to custom format
+git config --global stash.showFormat "%s (on %d)"
+
 # Open global config in configured editor
 git config --global --edit
 

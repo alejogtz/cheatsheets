@@ -1,2 +1,3 @@
 # http-serve serve local
 http-server <folder> --port=<port>
+# example:   http-server coverage/ --port=8000 --cors
