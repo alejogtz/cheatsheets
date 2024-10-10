@@ -1,3 +1,6 @@
+# Combinar ramas pero saltar el warning de SchemaUpToDate
+SKIP=RailsSchemaUpToDate git merge --continue
+
 # Se Combinar con otra rama pero sin hacer el commit y sin | MERGING
 git merge --no-commit --squash alejo/pdv/proof_of_address
 

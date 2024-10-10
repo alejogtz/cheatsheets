@@ -1,3 +1,6 @@
+# Sample to create certs for ssl
+openssl req -x509 -sha256 -nodes -newkey rsa:2048 -days 365 -keyout config/localhost.key -out config/localhost.crt -subj "/C=MX/ST=Oaxaca/L=Oaxaca/O=AuditoreIT/OU=Inc/CN=auditore.domain.com"
+
 openssl x509 -in {{filename}}.cer -text -noout
 # Open a Req File of SAT
  openssl req -inform DER -in {{filename}}.req -text -noout
