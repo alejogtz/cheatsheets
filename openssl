@@ -1,7 +1,12 @@
+# Sample to create a pair keys for vscode server
+openssl req -newkey rsa:2048 -nodes -keyout $HOME/.config/code-server/key.pem -x509 -days 365 -subj "/C=MX/ST=Oaxaca/L=Oaxaca/O=Auditore IT/OU=Inc/CN=auditore.domain.com" -out $HOME/.config/code-server/cert.pem
+
 # Sample to create certs for ssl
 openssl req -x509 -sha256 -nodes -newkey rsa:2048 -days 365 -keyout config/localhost.key -out config/localhost.crt -subj "/C=MX/ST=Oaxaca/L=Oaxaca/O=AuditoreIT/OU=Inc/CN=auditore.domain.com"
 
+# See a cert
 openssl x509 -in {{filename}}.cer -text -noout
+
 # Open a Req File of SAT
  openssl req -inform DER -in {{filename}}.req -text -noout
 
