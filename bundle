@@ -1,0 +1,7 @@
+# Update bundler
+bundle update --bundler
+
+# Add gem to Gemfile
+bundle add {{gem}}
+bundle add dry-schema
+

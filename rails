@@ -1,0 +1,7 @@
+# Restart rails console
+sprint stop
+spring start # status, stop
+
+# Restart test database
+rails db:reset RAILS_ENV=test
+

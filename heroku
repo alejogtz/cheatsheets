@@ -1,4 +1,3 @@
-
 # Login terminal mode
 heroku login -i
 
