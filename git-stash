@@ -1,3 +1,6 @@
+# Try to find file names that matches with regex expression name
+git stash list | while read line; do   stash_name=$(echo $line | cut -d: -f1);   git stash show -v "$stash_name" | grep "models/application" && echo "$line"; done
+
 # See stashes in current branch
 git stash list | grep {{branch}}
 git stash list | grep cotejo-domicilios-version
