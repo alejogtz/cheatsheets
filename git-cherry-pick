@@ -1,0 +1,3 @@
+# Apply commit without commit it
+git cherry-pick {{commit}} --no-commit
+
